@@ -5,42 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
+    <script src="src/js/i18n.js"></script>
 </head>
 <body>
     <header>
         <div>
             <ul>
-                <li><a href="#bio">About me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a data-i18n="menu.bio" href="#bio">About me</a></li>
+                <li><a data-i18n="menu.projects" href="#projects">Projects</a></li>
+                <li><a data-i18n="menu.contact" href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
     <section id="bio" class="bio">
         <div>
             <img src="" alt="">
-            <h2></h2>
-            <p></p>
+            <h2 data-i18n=""></h2>
+            <p data-i18n=""></p>
         </div>
         <div>
-            <h1></h1>
-            <p></p>
+            <h1 data-i18n=""></h1>
+            <p data-i18n=""></p>
         </div>
     </section>
     <section id="projects" class="projects">
         <section class="project">
             <h3>Statsview</h3>
             <p></p>
-            <a href="https://github.com/B3bq/Statsview">Statsview on github</a>
-            <a href="">Vist page</a>
+            <a data-i18n="statsview.github" href="https://github.com/B3bq/Statsview">Statsview on github</a>
+            <a data-i18n="statsview.demo" href="">Vist page</a>
         </section>
         <section class="project">
             <h3>Flask Task Manager</h3>
             <p></p>
-            <a href="https://github.com/B3bq/taskmgm">See code on github</a>
-            <a href="">Visite page</a>
+            <a data-i18n="taskmgm.github" href="https://github.com/B3bq/taskmgm">See code on github</a>
+            <a data-i18n="taskmgm.demo" href="">Visite page</a>
         </section>
     </section>
     <section id="contact" class="contact"></section>

@@ -1,0 +1,16 @@
+{
+    "menu": {
+        "bio": "O mnie",
+        "projects": "Projekty",
+        "contact": "Kontakt"
+    },
+    "bio": {},
+    "statsview": {
+        "github": "Statsview na Github",
+        "demo": "Odwiedź stronę"
+    },
+    "taskmgm": {
+        "github": "Zobacz kod na Githubie",
+        "demo":"Zobacz demo"
+    }
+}
