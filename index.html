@@ -10,40 +10,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="src/js/script.js" type="module" defer></script>
     
     <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
     <script src="src/js/i18n.js"></script>
 </head>
 <body>
     <header>
-        <div>
-            <ul>
+        <nav>
+            <button id="js-toggle-menu">
+                <img width="46" height="46" src="src/img/burger-bar.png" alt="toggle menu" id="menu">
+            </button>
+
+            <ul id="js-toggleable-menu">
                 <li><a data-i18n="menu.bio" href="#bio">About me</a></li>
                 <li><a data-i18n="menu.projects" href="#projects">Projects</a></li>
                 <li><a data-i18n="menu.contact" href="#contact">Contact</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
     <section id="bio" class="bio">
         <div>
-            <img src="" alt="">
-            <h2 data-i18n=""></h2>
-            <p data-i18n=""></p>
+            <img src="" alt="face">
+            <h1>Sebastian Kaca</h1>
+            <p>Backend Developer</p>
         </div>
         <div>
-            <h1 data-i18n=""></h1>
-            <p data-i18n=""></p>
+            <h1 data-i18n="bio.h1">About me</h1>
+            <p data-i18n="bio.desc">Something about me</p>
         </div>
     </section>
     <section id="projects" class="projects">
         <section class="project">
-            <h3>Statsview</h3>
+            <h2>Statsview</h2>
+            <div class="photos">
+                <img src="" alt="screen1">
+                <img src="" alt="screen2">
+                <img src="" alt="screen3">
+            </div>
             <p></p>
             <a data-i18n="statsview.github" href="https://github.com/B3bq/Statsview">Statsview on github</a>
             <a data-i18n="statsview.demo" href="">Vist page</a>
         </section>
         <section class="project">
-            <h3>Flask Task Manager</h3>
+            <h2>Flask Task Manager</h2>
+            <div class="photos">
+                <img src="" alt="screen1">
+                <img src="" alt="screen2">
+                <img src="" alt="screen3">
+            </div>
             <p></p>
             <a data-i18n="taskmgm.github" href="https://github.com/B3bq/taskmgm">See code on github</a>
             <a data-i18n="taskmgm.demo" href="">Visite page</a>

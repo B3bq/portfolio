@@ -4,7 +4,10 @@
         "projects": "Projects",
         "contact": "Contact"
     },
-    "bio": {},
+    "bio": {
+        "h1": "About me",
+        "desc": "I'm 21 years old."
+    },
     "statsview": {
         "github": "Statsview on Github",
         "demo": "Visit page"
