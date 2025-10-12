@@ -71,7 +71,6 @@ body > header nav ul.active {
   left: 0;
   width: 100%;
   background-color: rgba(46, 46, 46, 0.95);
-  padding: 10px;
 }
 body > header nav ul.active a {
   height: 48px;
@@ -79,6 +78,8 @@ body > header nav ul.active a {
   justify-content: flex-end;
   align-items: center;
   color: #1C1C1E;
+  font-size: larger;
+  padding: 10px;
 }
 @media (min-width: 768px) {
   body > header nav li {
