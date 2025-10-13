@@ -14,6 +14,7 @@ html{
 
 body{
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
@@ -24,71 +25,77 @@ body > header{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
     background-color: $primaryColor;
-
+    
     a{
         text-decoration: none;
-
+        
         @media (min-width: $laptopBreakPoint) {
             transform: translateY(0);
             transition: all 0.3s ease-in-out;
         }
-    
+        
         &:hover {
-          @media (min-width: $laptopBreakPoint) {
-            text-decoration: underline;
-            transform: translateY(0.25em);
-            transition: all 0.3s ease-in-out;
+            @media (min-width: $laptopBreakPoint) {
+                text-decoration: underline;
+                transform: translateY(0.25em);
+                transition: all 0.3s ease-in-out;
           }
+          
+        }
+    }
     
+    nav{
+       padding: 10px;
+        button{
+            background-color: transparent;
+            border: none;
+
+            @media (min-width: $laptopBreakPoint){
+                display: none;
+            }
         }
-    }
 
-   nav{
-    button{
-        background-color: transparent;
-        border: none;
-
-        @media (min-width: $laptopBreakPoint){
+        ul{
             display: none;
-        }
-    }
+            padding: 0;
+            margin: 10px 0px 0px 0px;
+            list-style: none;
 
-    ul{
-        display: none;
-        padding: 0;
-        margin: 10px 0px 0px 0px;
-        list-style: none;
-
-        @media (min-width: $laptopBreakPoint){
-            display: flex;
-            flex-direction: row;
-        }
-        &.active{
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            left: 0;
-            width: 100%;
-            background-color: rgb(46, 46, 46, 95%);
-
-            a{
-                height: 48px;
+            @media (min-width: $laptopBreakPoint){
                 display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                color: $primaryColor;
-                font-size: larger;
+                flex-direction: row;
+            }
+            &.active{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                background-color: rgb(46, 46, 46, 95%);
+
+                a{
+                    height: 48px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    color: $primaryColor;
+                    font-size: larger;
+                    padding: 10px;
+                }
+            }
+        }
+
+        li{
+            @media (min-width: $laptopBreakPoint){
                 padding: 10px;
             }
         }
-    }
-
-    li{
-        @media (min-width: $laptopBreakPoint){
-            padding: 10px;
-        }
-    }
    }
 }
