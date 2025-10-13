@@ -9,10 +9,20 @@
         "desc": "Mam 21 lat."
     },
     "statsview": {
+        "desc": "Interesowało mnie ile meczów różnych sportów oglądam w trakcie roku, bądź sezonu. Chciałem podsumowanie podobne do Spotify wrapped, więc zrobiłem Statsview. Projekt, który zlicza ile meczów obejrzał użytkownik podczas sezonu lub roku. Na koniec sezonu danego sportu, bądź na koniec roku pokazywane jest graficzne podsumowanie użytkownika.",
+        "summary": {
+            "heading": "Wyzwania i nauka",
+            "text": "Not now"
+        },
         "github": "Statsview na Github",
         "demo": "Odwiedź stronę"
     },
     "taskmgm": {
+        "desc": "Na pierwszy rzuk oka wygląda to jak zwykły menadżer zadań, ale tka nie jest. W tym menadżerze musisz zadbać o swojego zwierzaka. Także posiadasz swój streak wykonanych zadań każdego dnia z rzedu. Sklep może pomóc Ci nakarmić twoje zwierzątko lub przywrócić twój streak za opłatą. Niektóre zadania posiadają wyższą ważność i nie mogą zostać usuniete, ale można je usunąć za niewielką opłatą. Jest to prosty menadżer zadań, ale z innym podejściem.",
+        "summary": {
+            "heading": "Wyzwania i nauka",
+            "text": "Not now"
+        },
         "github": "Zobacz kod na Githubie",
         "demo":"Zobacz demo"
     }

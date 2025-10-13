@@ -9,10 +9,20 @@
         "desc": "I'm 21 years old."
     },
     "statsview": {
+        "desc": "I was interested how many games of each sport I watched and I wanted a summary like Spotify wrapped. Then I maked Statsview. This project counts how many matches user watched in the year or season and show user's summary on the end of season/year.",
+        "summary": {
+            "heading": "Challenges and learning",
+            "text": "Not now"
+        },
         "github": "Statsview on Github",
         "demo": "Visit page"
     },
     "taskmgm": {
+        "desc": "On first look it looks like normal task manager, but it isn't. In this manager you have to take care a pet, feed him. Also you have your own days streak when you dane some task each day in a row. Shop can help you feed your pet or take back your streak for a fee. Some tasks can't be deleted, because it has high importance, but can be deleted for a small fee. It's simple task manager but maked in different way.",
+        "summary": {
+            "heading":"Challenges and learning",
+            "text":"Not now"
+        },
         "github": "See code on Github",
         "demo":"Visit page"
     }
