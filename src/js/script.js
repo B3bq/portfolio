@@ -15,6 +15,22 @@ toggleMenuEl?.addEventListener('click', function(){
     isOpen = !isOpen; // change condition
 })
 
+// name on the top
+window.addEventListener("scroll", () => {
+    const name = document.getElementById("main-name");
+    const menuName = document.getElementById("menu-name");
+    const triggerPoint = name.offsetTop + name.offsetHeight;
+  
+    if (window.scrollY > triggerPoint) {
+      menuName.innerText = "Sebastian Kaca";
+      menuName.classList.add("visible");
+    } else {
+      menuName.innerText = "";
+      menuName.classList.remove("visible");
+    }
+});
+
+// changing photos
 document.querySelectorAll('.slider').forEach(slider => {
     const photos = slider.querySelectorAll('.photos img');
     const nextBtn = slider.querySelector('.next');

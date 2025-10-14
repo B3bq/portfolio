@@ -1,10 +1,21 @@
 @use 'variables.scss' as *;
 
+.project{
+    h2, h4, p, a{
+        margin: 14px 10px;
+    }
+}
+
 .slider{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: $fontColor;
+    background: $primaryColor;
+
+    button{
+        background: transparent;
+        border: none;
+    }
 }
 .photos{
     position: relative;
