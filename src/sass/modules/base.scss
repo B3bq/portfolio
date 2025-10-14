@@ -21,6 +21,13 @@ body{
     background: $primaryColor;
 }
 
+a{
+    color: $linkColor;
+    &:visited{
+        color: $linkAfter;
+    }
+}
+
 body > header{
     display: flex;
     flex-direction: row;
@@ -99,7 +106,7 @@ body > header{
                     display: flex;
                     justify-content: flex-end;
                     align-items: center;
-                    color: $primaryColor;
+                    color: $fontColor;
                     font-size: larger;
                     padding: 10px;
                 }
@@ -112,4 +119,12 @@ body > header{
             }
         }
    }
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
 }

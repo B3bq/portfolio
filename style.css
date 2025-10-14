@@ -21,6 +21,13 @@ body {
   background: #1C1C1E;
 }
 
+a {
+  color: #3aabd8;
+}
+a:visited {
+  color: #b523da;
+}
+
 body > header {
   display: flex;
   flex-direction: row;
@@ -98,7 +105,7 @@ body > header nav ul.active a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  color: #1C1C1E;
+  color: #f0f3f4;
   font-size: larger;
   padding: 10px;
 }
@@ -108,12 +115,29 @@ body > header nav ul.active a {
   }
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+}
+
 .bio {
   margin-top: 90px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+.projects h1 {
+  align-self: center;
+  margin-top: 50px;
 }
 
 .project h2, .project h4, .project p, .project a {

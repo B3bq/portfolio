@@ -1,5 +1,14 @@
 @use 'variables.scss' as *;
 
+.projects{
+    display: flex;
+    flex-direction: column;
+    h1{
+        align-self: center;
+        margin-top: 50px;
+    }
+}
+
 .project{
     h2, h4, p, a{
         margin: 14px 10px;
