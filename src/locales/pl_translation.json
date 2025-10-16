@@ -5,9 +5,11 @@
         "contact": "Kontakt"
     },
     "bio": {
+        "cv": "Pobierz CV",
         "h1": "O mnie",
         "desc": "Mam 21 lat."
     },
+    "projectText": "Projekty",
     "statsview": {
         "desc": "Interesowało mnie ile meczów różnych sportów oglądam w trakcie roku, bądź sezonu. Chciałem podsumowanie podobne do Spotify wrapped, więc zrobiłem Statsview. Projekt, który zlicza ile meczów obejrzał użytkownik podczas sezonu lub roku. Na koniec sezonu danego sportu, bądź na koniec roku pokazywane jest graficzne podsumowanie użytkownika.",
         "summary": {
@@ -25,5 +27,6 @@
         },
         "github": "Zobacz kod na Githubie",
         "demo":"Zobacz demo"
-    }
+    },
+    "contact": "Skontaktuj się ze mną"
 }

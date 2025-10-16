@@ -37,17 +37,26 @@
             <h1 id="main-name">Sebastian Kaca</h1>
             <p>Backend Developer</p>
         </div>
+        <a href="" data-i18n="bio.cv" download>Download CV</a>
         <div>
             <h1 data-i18n="bio.h1">About me</h1>
             <p data-i18n="bio.desc">Something about me</p>
         </div>
     </section>
     <section id="projects" class="projects">
-        <h1>Projects</h1>
+        <h1 data-i18n="projectText">Projects</h1>
         <section class="project">
             <h2>Statsview</h2>
+            <!--Add more to desc of project. What did you used and for what-->
             <p data-i18n="statsview.desc">Here is a description of project</p>
-            <div class="stack"></div>
+            <div class="stack">
+                <img src="src/img/html-5.png" alt="html">
+                <img src="src/img/sass.png" alt="sass">
+                <img src="src/img/node-js.png" alt="nodejs">
+                <img src="src/img/php.png" alt="php">
+                <img src="src/img/python.png" alt="py">
+                <img src="src/img/mysql-database.png" alt="mysql">
+            </div>
             <div class="slider">
                 <button class="prev"><img src="src/img/chevron-left.svg" alt="left arrow"></button>
                 <div class="photos">
@@ -63,13 +72,20 @@
                 <h4 data-i18n="statsview.summary.heading">What's I learned?</h4>
                 <p data-i18n="statsview.summary.text">A lot</p>
             </div>
-            <a data-i18n="statsview.github" href="https://github.com/B3bq/Statsview">Statsview on github</a>
+            <a data-i18n="statsview.github" href="https://github.com/B3bq/Statsview" target="_blank">Statsview on github</a>
             <a data-i18n="statsview.demo" href="">Vist page</a>
         </section>
         <section class="project">
             <h2>Flask Task Manager</h2>
             <p data-i18n="taskmgm.desc">Here is a description of project</p>
-            <div class="stack"></div>
+            <div class="stack">
+                <!--think about a bibliotecs on hover, I know that it isn't visible on mobile, but for destop can be great-->
+                <img src="src/img/python.png" alt="py">
+                <img src="src/img/database.png" alt="postgresql" style="filter: invert(1);">
+                <img src="src/img/html-5.png" alt="html">
+                <img src="src/img/node-js.png" alt="node-js">
+                <img src="src/img/sass.png" alt="sass">
+            </div>
             <div class="slider">
                 <button class="prev"><img src="src/img/chevron-left.svg" alt="left arrow"></button>
                 <div class="photos">
@@ -84,12 +100,12 @@
                 <h4 data-i18n="taskmgm.summary.heading">What's I learned?</h4>
                 <p data-i18n="taskmgm.summary.text">A lot</p>
             </div>
-            <a data-i18n="taskmgm.github" href="https://github.com/B3bq/taskmgm">See code on github</a>
+            <a data-i18n="taskmgm.github" href="https://github.com/B3bq/taskmgm" target="_blank">See code on github</a>
             <a data-i18n="taskmgm.demo" href="">Visite page</a>
         </section>
     </section>
     <section id="contact" class="contact">
-        <h3>You can contact me</h3>
+        <h3 data-i18n="contact">You can contact me</h3>
         <a href="mailto:kacaseba9@gmail.com" title="E-mail">kacaseba9@gmail.com</a>
     </section>
     <footer></footer>

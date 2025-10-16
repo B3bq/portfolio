@@ -5,9 +5,11 @@
         "contact": "Contact"
     },
     "bio": {
+        "cv": "Download CV",
         "h1": "About me",
         "desc": "I'm 21 years old."
     },
+    "projectText": "Projects",
     "statsview": {
         "desc": "I was interested how many games of each sport I watched and I wanted a summary like Spotify wrapped. Then I maked Statsview. This project counts how many matches user watched in the year or season and show user's summary on the end of season/year.",
         "summary": {
@@ -25,5 +27,6 @@
         },
         "github": "See code on Github",
         "demo":"Visit page"
-    }
+    },
+    "contact": "You can contact me"
 }
