@@ -2,6 +2,8 @@ Promise.all([
     fetch("src/locales/en_translation.json").then(res => res.json()),
     fetch("src/locales/pl_translation.json").then(res => res.json())
 ]).then(([en, pl]) => {
+    const userLang = navigator.language.startsWith("en") ? "en" : "pl";
+
     i18next.init({
         lng: navigator.language.startsWith("en") ? "en" : "pl",
         fallbackLng: "en",
@@ -10,6 +12,7 @@ Promise.all([
             pl: { translation: pl }
         }
     }).then(() => {
+        document.querySelector("html").lang = userLang;
         translatePage();
     })
 })
