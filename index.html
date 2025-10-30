@@ -5,45 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
+    <script src="src/js/script.js" type="module" defer></script>
+    
+    <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
+    <script src="src/js/i18n.js"></script>
 </head>
 <body>
     <header>
-        <div>
-            <ul>
-                <li><a href="#bio">About me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <h1 class="menu_left" id="menu-name"></h1>
+        <nav>
+            <button id="js-toggle-menu">
+                <img width="46" height="46" src="src/img/burger-bar.png" alt="toggle menu" id="menu" style="filter: invert(1);">
+            </button>
+
+            <ul id="js-toggleable-menu">
+                <li><a data-i18n="menu.bio" href="#bio">About me</a></li>
+                <li><a data-i18n="menu.projects" href="#projects">Projects</a></li>
+                <li><a data-i18n="menu.contact" href="#contact">Contact</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
     <section id="bio" class="bio">
-        <div>
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
+        <div class="bio__left">
+            <img src="" alt="face">
+            <h1 id="main-name">Sebastian Kaca</h1>
+            <p>Backend Developer</p>
         </div>
-        <div>
-            <h1></h1>
-            <p></p>
+        <a href="" data-i18n="bio.cv" class="bio__cv" download>Download CV</a>
+        <a href="" class="bio__cvBTN" download><button data-i18n="bio.cv">Download CV</button></a>
+        <div class="bio__right">
+            <h1 data-i18n="bio.h1">About me</h1>
+            <p data-i18n="bio.desc">Something about me</p>
         </div>
     </section>
     <section id="projects" class="projects">
-        <section class="project">
-            <h3>Statsview</h3>
-            <p></p>
-            <a href="https://github.com/B3bq/Statsview">Statsview on github</a>
-            <a href="">Vist page</a>
+        <h1 data-i18n="projectText">Projects</h1>
+        <section class="project statsview">
+            <h2>Statsview</h2>
+            <!--Add more to desc of project. What did you used and for what-->
+            <p data-i18n="statsview.desc">Here is a description of project</p>
+            <div class="stack">
+                <img src="src/img/html-5.png" alt="html">
+                <img src="src/img/sass.png" alt="sass">
+                <img src="src/img/node-js.png" alt="nodejs">
+                <img src="src/img/php.png" alt="php">
+                <img src="src/img/python.png" alt="py">
+                <img src="src/img/mysql-database.png" alt="mysql">
+            </div>
+            <div class="slider">
+                <button class="prev"><img src="src/img/chevron-left.svg" alt="left arrow"></button>
+                <div class="photos">
+                    <img src="src/img/screen1.png" alt="screen1" class="active">
+                    <img src="src/img/screen2.png" alt="screen2">
+                    <img src="src/img/screen3.png" alt="screen3">
+                    <img src="src/img/screen4.png" alt="screen4" >
+                    <img src="src/img/screen5.png" alt="screen5">
+                </div>
+                <button class="next"><img src="src/img/chevron-right.svg" alt="right arrow"></button>
+            </div>
+            <div class="summary">
+                <h4 data-i18n="statsview.summary.heading">What's I learned?</h4>
+                <p data-i18n="statsview.summary.text">A lot</p>
+            </div>
+            <div class="links">
+                <a data-i18n="statsview.github" href="https://github.com/B3bq/Statsview" target="_blank">Statsview on github</a>
+                <a data-i18n="statsview.demo" href="" target="_blank">Vist page</a>
+            </div>
         </section>
-        <section class="project">
-            <h3>Flask Task Manager</h3>
-            <p></p>
-            <a href="https://github.com/B3bq/taskmgm">See code on github</a>
-            <a href="">Visite page</a>
+        <section class="project taskmgm">
+            <h2>Flask Task Manager</h2>
+            <p data-i18n="taskmgm.desc">Here is a description of project</p>
+            <div class="stack">
+                <!--think about a bibliotecs on hover, I know that it isn't visible on mobile, but for destop can be great-->
+                <img src="src/img/python.png" alt="py">
+                <img src="src/img/database.png" alt="postgresql" style="filter: invert(1);">
+                <img src="src/img/html-5.png" alt="html">
+                <img src="src/img/node-js.png" alt="node-js">
+                <img src="src/img/sass.png" alt="sass">
+            </div>
+            <div class="slider">
+                <button class="prev"><img src="src/img/chevron-left.svg" alt="left arrow"></button>
+                <div class="photos">
+                    <img src="src/img/tmgm1.png" alt="screen1" class="active">
+                    <img src="src/img/tmgm2.png" alt="screen2">
+                    <img src="src/img/tmgm3.png" alt="screen3">
+                    <img src="src/img/tmgm4.png" alt="screen3">
+                </div>
+                <button class="next"><img src="src/img/chevron-right.svg" alt="right arrow"></button>
+            </div>
+            <div class="summary">
+                <h4 data-i18n="taskmgm.summary.heading">What's I learned?</h4>
+                <p data-i18n="taskmgm.summary.text">A lot</p>
+            </div>
+            <div class="links">
+                <a data-i18n="taskmgm.github" href="https://github.com/B3bq/taskmgm" target="_blank">See code on github</a>
+                <a data-i18n="taskmgm.demo" href="">Visite page</a>
+            </div>
         </section>
     </section>
-    <section id="contact" class="contact"></section>
+    <section id="contact" class="contact">
+        <h3 data-i18n="contact">You can contact me</h3>
+        <a href="mailto:kacaseba9@gmail.com" title="E-mail">kacaseba9@gmail.com</a>
+    </section>
     <footer></footer>
 </body>
 </html>

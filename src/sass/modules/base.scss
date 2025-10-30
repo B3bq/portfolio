@@ -8,3 +8,123 @@
 *,*::before, *::after{
     box-sizing: inherit;
 }
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    background: $primaryColor;
+}
+
+a{
+    color: $linkColor;
+    &:visited{
+        color: $linkAfter;
+    }
+}
+
+body > header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: $primaryColor;
+    box-shadow: 1px 2px 10px $secondaryColor;
+
+    .menu_left{
+        opacity: 0;
+        transform: translateX(-10px);
+        transition: all 0.3s ease;
+
+        &.visible{
+            opacity: 1;
+            transform: translateX(0);
+            padding-left: 10px;
+        }
+    }
+    
+    a{
+        text-decoration: none;
+        
+        @media (min-width: $laptopBreakPoint) {
+            transform: translateY(0);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        &:hover {
+            @media (min-width: $laptopBreakPoint) {
+                text-decoration: underline;
+                transform: translateY(0.25em);
+                transition: all 0.3s ease-in-out;
+          }
+          
+        }
+    }
+    
+    nav{
+       padding: 10px;
+        button{
+            background-color: transparent;
+            border: none;
+
+            @media (min-width: $laptopBreakPoint){
+                display: none;
+            }
+        }
+
+        ul{
+            display: none;
+            padding: 0;
+            margin: 10px 0px 0px 0px;
+            list-style: none;
+
+            @media (min-width: $laptopBreakPoint){
+                display: flex;
+                flex-direction: row;
+            }
+            &.active{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                background-color: rgb(46, 46, 46, 95%);
+
+                a{
+                    height: 48px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    color: $fontColor;
+                    font-size: larger;
+                    padding: 10px;
+                }
+            }
+        }
+
+        li{
+            @media (min-width: $laptopBreakPoint){
+                padding: 10px;
+            }
+        }
+   }
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
