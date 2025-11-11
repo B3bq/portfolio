@@ -7,14 +7,14 @@
     "bio": {
         "cv": "Pobierz CV",
         "h1": "O mnie",
-        "desc": "Mam 21 lat."
+        "desc": "Siema nazywam się Sebastian i mam 21 lat. Można poweidzieć, że to tyle z mojego opisu, nie mam wiele do powiedziania o sobie, ale jestem bardzo pomysłowym gościem. Myślę, że przedstawione przeze mnie projekty to pokażą. Pasjonuje mnie programowanie, sprawia mi ogromną satysfakcję oglądanie efektów swojej pracy nad aplikacjami, czy to desktopowymi, mobilnymi, czy webowymi. Nie jestem najepszy w designie co można zobaczyć po moich projektach na dole😅. Co innego same działanie, dobrze odnajduję się w pracach funkcjonalnych projektu."
     },
     "projectText": "Projekty",
     "statsview": {
         "desc": "Interesowało mnie ile meczów różnych sportów oglądam w trakcie roku, bądź sezonu. Chciałem podsumowanie podobne do Spotify wrapped, więc zrobiłem Statsview. Projekt, który zlicza ile meczów obejrzał użytkownik podczas sezonu lub roku. Na koniec sezonu danego sportu, bądź na koniec roku pokazywane jest graficzne podsumowanie użytkownika.",
         "summary": {
             "heading": "Wyzwania i nauka",
-            "text": "Not now"
+            "text": "Był to mój pierwszy tak duży projekt, co w rezultacie sprawiło mi wiele bolączek spowodowanym brakiem doświadczenia. Głównym wyzwaniem byłu utworzenie struktury bazy danych. Określenie ilości potrzebnych tabel, relacje między nimi. Jednakże w trakcie rozwoju projektu tabele przechodziły także zmiany. Z początku projekt miał być dla mojego użytku co generowałuo jedynie 3 tabele połączone relacją wiele do wielu (jedna z klubami, druga z ligami i łączącaje), z czasem stwierdziłem, że może to także pomóc innym osobą. W rezultacie dodawane były kolejne kolumny z danymi takimi jak połączenie zdjęć z klubami i ligami, czy dodanie danych o użytkownikach. W konsekwecji wyciągnąłem wnioski, że brak określenia celu, sposobu rozwiązania problemu wydłuża czas pracy. Doprowadziło to do rozwoju aplikacji desktop oraz strony internetowej. Do stworzenia aplikacji destopowej wykorzystałem wiele bibliotek, które umożliwiły mi między innymi nauczenie się wysyłania maili, zapisywania danych oraz ich odczyt, pisania logów, czy łączenie z bazą. W stronie internetowej wykorzystywałem narzędzia wspomagające mnie w designie, zapytania ajax, dzięki którym nie trzeba było przeładowywać stron w pewnych miejscach, co zapewniło wspaniały efekt (czy także pomogły podczas zbierania danych do list wyboru), czy także istotna nauka wysyłania maili. Owy projekt nauczył mnie wiele, począwszy od tego jak projektować layout, żeby pył przyjazny i przejrzysty. Kończywszy na tym co się dzieje, gdy się kliknie jakiś przycisk."
         },
         "github": "Statsview na Github",
         "demo": "Odwiedź stronę"
@@ -23,7 +23,7 @@
         "desc": "Na pierwszy rzuk oka wygląda to jak zwykły menadżer zadań, ale tka nie jest. W tym menadżerze musisz zadbać o swojego zwierzaka. Także posiadasz swój streak wykonanych zadań każdego dnia z rzedu. Sklep może pomóc Ci nakarmić twoje zwierzątko lub przywrócić twój streak za opłatą. Niektóre zadania posiadają wyższą ważność i nie mogą zostać usuniete, ale można je usunąć za niewielką opłatą. Jest to prosty menadżer zadań, ale z innym podejściem.",
         "summary": {
             "heading": "Wyzwania i nauka",
-            "text": "Not now"
+            "text": "Ten menadźer zadań nauczył mnie pracy w mikroframeworku jakim jest Flask oraz pracy na bazie PostgreSQL za pomocą SQLAlchemy. Głównym problemem było przyzwyczajenie się do innego sposobu łączenia ze sobą stron. Wyciąganie potrzebnych danych z bazy okazało się być dość proste, jednakże nie wiedziałem jak przekazać potrzebne mi informacje do html (takie jak nazwa, poziom paska głodu zwierzaczka itp.), w tym pomogły mi zapytania Jinja. Z początku mały kłopot sprawił mi system przeciągania zadań między różnymi etapami, jednak udało mi się ostatecznie go zrobić. Ogólnie projekt był nastawiony na funkcjonalność, więc głównie w tym projekcie zajmowałem się pracą z bazą danych, odbieraniem danych od urzytkowanika, jak i tym co się stanie, gdy coś kliknie."
         },
         "github": "Zobacz kod na Githubie",
         "demo":"Zobacz demo"
