@@ -158,6 +158,9 @@ body > header nav ul.active a {
 .bio__right h1 {
   align-self: center;
 }
+.bio__right p {
+  margin: 14px 20px;
+}
 @media (min-width: 768px) {
   .bio__right {
     grid-column: 2;
@@ -240,12 +243,12 @@ body > header nav ul.active a {
   .statsview h2 {
     grid-column: 1;
     grid-row: 1;
-    margin: 0px 10px;
+    margin: 0px 30px;
   }
   .statsview p {
     grid-column: 1;
     grid-row: 2;
-    margin: 0px 10px;
+    margin: 0px 30px;
   }
   .statsview .stack {
     grid-column: 1;
@@ -282,12 +285,12 @@ body > header nav ul.active a {
   .taskmgm h2 {
     grid-column: 2;
     grid-row: 1;
-    margin: 0px 10px;
+    margin: 0px 30px;
   }
   .taskmgm p {
     grid-column: 2;
     grid-row: 2;
-    margin: 0px 10px;
+    margin: 0px 30px;
   }
   .taskmgm .stack {
     grid-column: 2;
@@ -319,7 +322,7 @@ body > header nav ul.active a {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin: 0px 0px 10px 10px;
+  margin: 0px 0px 10px 30px;
 }
 .stack img {
   width: 24px;
