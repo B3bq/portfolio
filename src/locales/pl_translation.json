@@ -28,5 +28,11 @@
         "github": "Zobacz kod na Githubie",
         "demo":"Zobacz demo"
     },
-    "contact": "Skontaktuj się ze mną"
+    "contact": "Skontaktuj się ze mną",
+    "mini": {
+        "heading": "Małe projekty",
+        "desc": "To są projekty głównie skupiające się na backendzie. Nie jest ważny wygląd, gdyż były one robione pod nauke tego jak pracować z api, iwentami itp.",
+        "crypto": "To prosty market cryptowalut do śledzenia ich wartości na przestrzeni tygodnia. Pokazane są top 10 najdroższych walut, po kliknięciu na jedną z nich pokazuje się tygodniowy wykres danej waluty. Ponad to także można obliczyć ilość Bitciona jaką można kupić po wpisaniu kwoty w PLN.",
+        "travel": "Jest to prosty planer podróży. Możesz zobaczyć trochę informacji o jakimś miejscu, a następnie dodać je do listy celów. Po dodaniu celu można także dodać jakąć notatkę do swojego celu podróży."
+    }
 }
