@@ -168,3 +168,42 @@
         }
     }
 }
+
+.mini-projects{
+    @media (min-width: $laptopBreakPoint){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        h1{
+            grid-area: 1 / 1 / 2 / 3;
+            text-align: center;
+        }
+        .mini-desc{
+            grid-area: 2 / 1 / 3 / 3;
+            text-align: center;
+        }
+        #crypto{
+            grid-area: 3 / 1 / 4 / 2;
+        }
+        #travel{
+            grid-area: 3 / 2 / 4 / 3;
+        }
+    }
+    h1, h2, h4, p, a{
+        margin: 14px 10px;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+       width: 350px;
+       height: 250px;
+    }
+}

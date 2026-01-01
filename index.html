@@ -38,8 +38,7 @@
             <h1 id="main-name">Sebastian Kaca</h1>
             <p>Backend Developer</p>
         </div>
-        <a href="" data-i18n="bio.cv" class="bio__cv" download>Download CV</a>
-        <a class="bio__cvBTN" id="cv" download="SebastianKacaCV"><button data-i18n="bio.cv">Download CV</button></a>
+        <button class="bio__cvBTN" data-i18n="bio.cv" id="CV-btn">Download CV</button>
         <div class="bio__right">
             <h1 data-i18n="bio.h1">About me</h1>
             <p data-i18n="bio.desc">Something about me</p>
@@ -112,16 +111,16 @@
     </section>
     <section class="mini-projects">
         <h1 data-i18n="mini.heading">Mini projects</h1>
-        <p data-i18n="mini.desc">This projects are generally for backend. Their look isn't important, because they were for learn how to work with api, events etc.</p>
-        <section>
+        <p data-i18n="mini.desc"  class="mini-desc">This projects are generally for backend. Their look isn't important, because they were for learn how to work with api, events etc.</p>
+        <section id="crypto">
             <h2>Crypto Market</h2>
             <p data-i18n="mini.crypto">It is a simple market of crypto to track their week value. There are top 10 the most valuable crypto and when you click on some, then show his week chart. You also can calculate how many Bitcons can you buy after enter PLN.</p>
-            <img src="" alt="">
+            <img src="src/img/crypto.png" alt="cryptoApp-img">
         </section>
-        <section>
+        <section id="travel">
             <h2>Travel planner</h2>
             <p data-i18n="mini.travel">It is simple travel goals app. You can see some info about any place and add a place to goals list. Also you can add note to your trip goals.</p>
-            <img src="" alt="">
+            <img src="src/img/travel.png" alt="travelApp-img">
         </section>
     </section>
     <section id="contact" class="contact">

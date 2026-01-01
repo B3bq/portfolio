@@ -13,7 +13,6 @@ Promise.all([
         }
     }).then(() => {
         document.querySelector("html").lang = userLang;
-        document.getElementById('cv').href = `cv_${userLang}.txt`;
         translatePage();
     })
 })

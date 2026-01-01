@@ -4,6 +4,18 @@ const toggleableMenuEl = document.getElementById('js-toggleable-menu');
 const menu = document.getElementById('menu');
 let isOpen = false;
 
+const cvBtn = document.getElementById('CV-btn');
+
+cvBtn.addEventListener('click', ()=>{
+    const link = document.createElement("a");
+    link.href = "cv_en.txt";
+    link.download = "SebastianKacaCV.pdf";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+})
+
 toggleMenuEl?.addEventListener('click', function(){
     toggleableMenuEl?.classList.toggle('active');
     if(isOpen){
