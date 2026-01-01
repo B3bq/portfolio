@@ -402,6 +402,7 @@ body > header nav ul.active a {
 .mini-projects img {
   width: 350px;
   height: 250px;
+  margin: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
