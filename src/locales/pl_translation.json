@@ -23,15 +23,24 @@
         "desc": "Na pierwszy rzuk oka wygląda to jak zwykły menadżer zadań, ale tka nie jest. W tym menadżerze musisz zadbać o swojego zwierzaka. Także posiadasz swój streak wykonanych zadań każdego dnia z rzedu. Sklep może pomóc Ci nakarmić twoje zwierzątko lub przywrócić twój streak za opłatą. Niektóre zadania posiadają wyższą ważność i nie mogą zostać usuniete, ale można je usunąć za niewielką opłatą. Jest to prosty menadżer zadań, ale z innym podejściem.",
         "summary": {
             "heading": "Wyzwania i nauka",
-            "text": "Ten menadźer zadań nauczył mnie pracy w mikroframeworku jakim jest Flask oraz pracy na bazie PostgreSQL za pomocą SQLAlchemy. Głównym problemem było przyzwyczajenie się do innego sposobu łączenia ze sobą stron. Wyciąganie potrzebnych danych z bazy okazało się być dość proste, jednakże nie wiedziałem jak przekazać potrzebne mi informacje do html (takie jak nazwa, poziom paska głodu zwierzaczka itp.), w tym pomogły mi zapytania Jinja. Z początku mały kłopot sprawił mi system przeciągania zadań między różnymi etapami, jednak udało mi się ostatecznie go zrobić. Ogólnie projekt był nastawiony na funkcjonalność, więc głównie w tym projekcie zajmowałem się pracą z bazą danych, odbieraniem danych od urzytkowanika, jak i tym co się stanie, gdy coś kliknie."
+            "text": "Ten menadżer zadań nauczył mnie pracy w mikroframeworku jakim jest Flask oraz pracy na bazie PostgreSQL za pomocą SQLAlchemy. Głównym problemem było przyzwyczajenie się do innego sposobu łączenia ze sobą stron. Wyciąganie potrzebnych danych z bazy okazało się być dość proste, jednakże nie wiedziałem jak przekazać potrzebne mi informacje do html (takie jak nazwa, poziom paska głodu zwierzaczka itp.), w tym pomogły mi zapytania Jinja. Z początku mały kłopot sprawił mi system przeciągania zadań między różnymi etapami, jednak udało mi się ostatecznie go zrobić. Ogólnie projekt był nastawiony na funkcjonalność, więc głównie w tym projekcie zajmowałem się pracą z bazą danych, odbieraniem danych od urzytkowanika, jak i tym co się stanie, gdy coś kliknie."
         },
         "github": "Zobacz kod na Githubie",
         "demo":"Zobacz demo"
     },
+    "multiqiuz": {
+        "desc": "Kontekst: Na zaliczenie przedmoitu z języka angielskiego musieliśmy przeczytać artukuł, a następnie zaagażować jakoś grupę w zajęcia. Moim pomysłem było stworzenie quizu na wzór popularnego Kahoota. Dlaczego zrobienie samemu od zera, a nie tworznie Kahoota? Odpowiedź jest prosta, było to dla mnie wyzwanie storzenia czegoś takiego oraz oczywiście nauka wielu nowych rzeczy. Tak powstał oto ten qiuz multipalyer. Zasada działania jest prosta jedna osoba tworzy pokój, reszta się lączy i zaczynamy zabawę. Poprawne odpowiedzi dają punkty, a na koniec można zobaczyć klasyfikację końcową graczy.",
+        "summary": {
+            "heading":"Wyzwania i nauka",
+            "text":"Głownym wyzwaniem i nauką było nauczenie się działania socketów, aby wszyscy gracze dostawali te same informacje na ekran oraz nie było problemów z ich odpowiedziami w tym samym czasie."
+        },
+        "github": "Zobacz kod na Githubie",
+        "demo":"Odwiedź stronę"
+    },
     "contact": "Skontaktuj się ze mną",
     "mini": {
         "heading": "Małe projekty",
-        "desc": "To są projekty głównie skupiające się na backendzie. Nie jest ważny wygląd, gdyż były one robione pod nauke tego jak pracować z api, iwentami itp.",
+        "desc": "To są projekty głównie skupiające się na backendzie. Nie jest ważny wygląd, gdyż były one robione pod nauke tego jak pracować z api, eventami itp. W rezultacie ich mobilny wygląd nie istnieje",
         "crypto": "To prosty market cryptowalut do śledzenia ich wartości na przestrzeni tygodnia. Pokazane są top 10 najdroższych walut, po kliknięciu na jedną z nich pokazuje się tygodniowy wykres danej waluty. Ponad to także można obliczyć ilość Bitciona jaką można kupić po wpisaniu kwoty w PLN.",
         "travel": "Jest to prosty planer podróży. Możesz zobaczyć trochę informacji o jakimś miejscu, a następnie dodać je do listy celów. Po dodaniu celu można także dodać jakąć notatkę do swojego celu podróży."
     }

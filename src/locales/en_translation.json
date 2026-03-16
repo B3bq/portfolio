@@ -28,10 +28,19 @@
         "github": "See code on Github",
         "demo":"Visit page"
     },
+    "multiqiuz": {
+        "desc": "Context: We had to read an article for the English lesson at the University and then make our group interact to the lesson. I had an idea to make quiz similar to popular Kahoot. Why don't you create a Kahoot instead of creating your own quiz? Answer is simple, it was a challenge of make something like that for me and of course learning of some new things. This is how this multiplayer quiz was created. The principle is simple: one person creates a room, the rest join in, and the fun begins. Correct answers earn points, and at the end, you can see the final player standings.",
+        "summary": {
+            "heading":"Challenges and learning",
+            "text":"The main challenge and learning was learn how to sockets works to all players receive same information on the screen and there wasn't problems with their answers in the same time."
+        },
+        "github": "See code on Github",
+        "demo":"Visit page"
+    },
     "contact": "You can contact me",
     "mini": {
         "heading": "Mini projects",
-        "desc": "This projects are generally for backend. Their look isn't important, because they were for learn how to work with api, events etc.",
+        "desc": "This projects are generally for backend. Their look isn't important, because they were for learn how to work with api, events etc. In result their mobile view doeasn't exist.",
         "crypto": "It is a simple market of crypto to track their week value. There are top 10 the most valuable crypto and when you click on some, then show his week chart. You also can calculate how many Bitcons can you buy after enter PLN.",
         "travel": "It is simple travel goals app. You can see some info about any place and add a place to goals list. Also you can add note to your trip goals."
     }
