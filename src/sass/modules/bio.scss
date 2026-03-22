@@ -17,6 +17,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px 0px #6e6e6e;
+        }
+
         p{
             margin: 0;
         }
