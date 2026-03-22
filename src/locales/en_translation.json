@@ -7,14 +7,14 @@
     "bio": {
         "cv": "Download CV",
         "h1": "About me",
-        "desc": ""
+        "desc": "Hi my name is Sebastian and I'm 21 years old. You can say that's all about me, I don't have much to say about myself, but I'm a very creative guy. I think the projects I present will show that. I'm passionate about programming, it gives me great satisfaction to see the effects of my work on applications, whether desktop, mobile or web. I'm not the best at design as you can see from my projects below😅. What is different is the operation itself, I find myself well in functional work of the project."
     },
     "projectText": "Projects",
     "statsview": {
         "desc": "I was interested how many games of each sport I watched and I wanted a summary like Spotify wrapped. Then I maked Statsview. This project counts how many matches user watched in the year or season and show user's summary on the end of season/year.",
         "summary": {
             "heading": "Challenges and learning",
-            "text": "Not now"
+            "text": "It was my first big project, which in result gave me a lot of troubles caused by lack of experience. The main challenge was creating database structure. Determining the number of tables needed, the relationships between them. However, during the development of the project, the tables also underwent changes. At first, the project was supposed to be for my use, which generated only 3 tables connected with many-to-many relationship (one with clubs, second with leagues and connecting one), over time I decided that it may also help other people. As a result, more columns were added with data such as connecting photos with clubs and leagues, or adding data about users. In consequence I drew conclusions that lack of defining the goal, way of solving problem extends work time. It led to development of desktop application and website. To create desktop application I used many libraries that allowed me among other things to learn how to send emails, save data and read it, write logs or connect with database. In website I used tools that helped me in design, ajax queries that made it so that there was no need to reload pages in certain places, which provided a great effect (or also helped during collecting data for select lists), or also important learning of sending emails. This project taught me a lot, starting from how to design layout to be friendly and clear. Ending on what happen when you click some button."
         },
         "github": "Statsview on Github",
         "demo": "Visit page"
@@ -23,7 +23,7 @@
         "desc": "On first look it looks like normal task manager, but it isn't. In this manager you have to take care a pet, feed him. Also you have your own days streak when you dane some task each day in a row. Shop can help you feed your pet or take back your streak for a fee. Some tasks can't be deleted, because it has high importance, but can be deleted for a small fee. It's simple task manager but maked in different way.",
         "summary": {
             "heading":"Challenges and learning",
-            "text":"Not now"
+            "text":"This task manager learned me work in microframework like Flask and work on PostgreSQL database with SQLAlchemy. The main problem was get used to different way of connecting pages. Getting needed data from database was quite simple, but I didn't know how to pass needed information to html (like name, pet's hunger bar level etc.), in this helped me Jinja queries. At first small problem was dragging system of tasks between different stages, but I finally did it. Generally project was focused on functionality, so mainly in this project I was working with database, receiving data from user and what happen when user click something."
         },
         "github": "See code on Github",
         "demo":"Visit page"

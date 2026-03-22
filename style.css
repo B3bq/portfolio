@@ -227,6 +227,7 @@ body > header nav ul.active a {
   position: relative;
   background: #0422cc;
   margin-top: 10px;
+  box-shadow: 1px 2px 10px #0422cc;
 }
 @media (min-width: 768px) {
   .project::after {
@@ -314,6 +315,23 @@ body > header nav ul.active a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+}
+
+.summary::after {
+  display: none;
+}
+@media (min-width: 768px) {
+  .summary::after {
+    content: "";
+    display: block;
+    width: 95%;
+    height: 2px;
+    position: relative;
+    background: #6e6e6e;
+    margin-top: 10px;
+    align-self: center;
+    box-shadow: 1px 2px 10px #6e6e6e;
   }
 }
 
