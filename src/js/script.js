@@ -8,7 +8,7 @@ const cvBtn = document.getElementById('CV-btn');
 
 cvBtn.addEventListener('click', ()=>{
     const link = document.createElement("a");
-    link.href = "cv_en.txt";
+    link.href = "sebastian_kaca_cv.pdf";
     link.download = "SebastianKacaCV.pdf";
 
     document.body.appendChild(link);
