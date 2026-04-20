@@ -8,7 +8,12 @@ const cvBtn = document.getElementById('CV-btn');
 
 cvBtn.addEventListener('click', ()=>{
     const link = document.createElement("a");
-    link.href = "sebastian_kaca_cv.pdf";
+    let lang = navigator.language || navigator.userLanguage;
+    if(lang.startsWith("pl")){
+        link.href = "cv_pl.pdf";
+    } else {
+        link.href = "cv_en.pdf";
+    }
     link.download = "SebastianKacaCV.pdf";
 
     document.body.appendChild(link);
