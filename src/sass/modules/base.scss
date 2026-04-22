@@ -53,6 +53,18 @@ body > header{
             padding-left: 10px;
         }
     }
+    .menu_right{
+        display: flex;
+        flex-direction: row;
+
+        select{
+            border-radius: 5px;
+            height: 50%;
+            padding: 5px;
+            align-self: center;
+            font-size: larger;
+        }
+    }
     
     a{
         text-decoration: none;

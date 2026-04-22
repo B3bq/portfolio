@@ -20,17 +20,23 @@
 <body>
     <header>
         <h1 class="menu_left" id="menu-name"></h1>
-        <nav>
-            <button id="js-toggle-menu">
-                <img width="46" height="46" src="src/img/burger-bar.png" alt="toggle menu" id="menu" style="filter: invert(1);">
-            </button>
-
-            <ul id="js-toggleable-menu">
-                <li><a data-i18n="menu.bio" href="#bio">About me</a></li>
-                <li><a data-i18n="menu.projects" href="#projects">Projects</a></li>
-                <li><a data-i18n="menu.contact" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="menu_right">
+            <select id="language-switcher">
+                <option value="en">English</option>
+                <option value="pl">Polski</option>
+            </select>
+            <nav>
+                <button id="js-toggle-menu">
+                    <img width="46" height="46" src="src/img/burger-bar.png" alt="toggle menu" id="menu" style="filter: invert(1);">
+                </button>
+    
+                <ul id="js-toggleable-menu">
+                    <li><a data-i18n="menu.bio" href="#bio">About me</a></li>
+                    <li><a data-i18n="menu.projects" href="#projects">Projects</a></li>
+                    <li><a data-i18n="menu.contact" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section id="bio" class="bio">
         <div class="bio__left">

@@ -5,7 +5,7 @@ Promise.all([
     const userLang = navigator.language.startsWith("en") ? "en" : "pl";
 
     i18next.init({
-        lng: navigator.language.startsWith("en") ? "en" : "pl",
+        lng: userLang,
         fallbackLng: "en",
         resources: {
             en: { translation: en },

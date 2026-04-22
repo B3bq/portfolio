@@ -86,3 +86,38 @@ document.querySelectorAll('.slider').forEach(slider => {
         showSlide(newIndex, 'prev');
     });
 })
+
+const languageSwitcher = document.getElementById('language-switcher');
+
+const urlParams = new URLSearchParams(window.location.search);
+let langFromUrl = urlParams.get('lang');
+
+let browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+
+let currentLanguage;
+
+if (langFromUrl) {
+    currentLanguage = langFromUrl;
+}else {
+    currentLanguage = browserLang.startsWith("pl") ? "pl" : "en";
+}
+
+languageSwitcher.value = currentLanguage;
+
+languageSwitcher.addEventListener('change', (event) => {
+    const selectedLanguage = event.target.value;
+    const url = new URL(window.location.href);
+
+    if (selectedLanguage === (browserLang.startsWith("pl") ? "pl" : "en")) {
+        url.searchParams.delete('lang');
+    } else {
+        url.searchParams.set('lang', selectedLanguage);
+    }
+    window.history.replaceState({}, '', url);
+
+    i18next.changeLanguage(selectedLanguage).then(() => {
+        document.querySelector("html").lang = selectedLanguage;
+        translatePage();
+    });
+}
+)
